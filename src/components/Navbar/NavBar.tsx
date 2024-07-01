@@ -1,33 +1,37 @@
 import React from "react";
+import "./NavBar.css";
 
 export default function NavBar() {
   return (
-    <div>
-      {/* navbar */}
-
-      <nav className="navbar">
+    <>
+      <header>
         <h1>XorCodes</h1>
-
-        <div className="navlinks">
-          <li className="navlink">
-            <a href="#">Discover</a>
-          </li>
-          <li className="navlink">
-            <a href="#">Portfolio</a>
-          </li>
-          <li className="navlink">
-            <a href="#">Team</a>
-          </li>
-          <li className="navlink">
-            <a href="#">Careers</a>
-          </li>
-          <div id="contact">
-            <li className="navlink">
+        <nav>
+          <div className="nav-links">
+            <li>
+              <a href="#">Discover</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Team</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li className="contact">
               <a href="#">Contact us</a>
             </li>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </header>
+
+      <div className="home-main">
+        <h1 className="home-content">Innovation</h1>
+        <h1 className="home-content">Technology</h1>
+        <h1 className="home-content">Solution</h1>
+      </div>
+    </>
   );
 }
